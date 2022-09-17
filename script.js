@@ -129,10 +129,10 @@ function setup() {
   img = loadImage('2.jpg');
   img3 = loadImage('3.jpg');
   img4 = loadImage('4.jpg');
-  console.log((Math.random() > .5 ?'1':'2')+'.webm')
-  vid = createVideo(['1.webm']);
-  vid.elt.muted = false;
-  vid.loop();
+//   console.log((Math.random() > .5 ?'1':'2')+'.webm')
+//   vid = createVideo(['1.webm']);
+//   vid.elt.muted = false;
+//   vid.loop();
   //vid.hide();
 }
 

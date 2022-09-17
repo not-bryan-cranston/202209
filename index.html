@@ -1,10 +1,85 @@
 <html>
   <head>
-    <title>FREE NOVA SCOTIA and sell it to the THAI</title>
+    <title>FREE NOVA SCOTIA! SUBJUGATE IOWA</title>
+    <style>
+      html,
+body,
+main,
+canvas {
+  
+  border: 0;
+  
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(1.jpg);
+}
+main {
+  /* max-width: 100px;
+  max-height: 100px; */
+  width: 75%;
+  height: 75%;
+  overflow: hidden;
+}
+    </style>
   </head>
   <body>
-    <h1><blink>SELL YOUR ORGANS TO BUY MY NFT</blink></h1>
+    <h1>SELL YOUR ORGANS TO BUY MY NFTs</h1>
+    <code><a href="https://github.com/not-bryan-cranston/202209" target="_blank">CODE</a></code>
+    <video loop autoplay  width="250"><source src="1.webm" type="video/webm"></video>
     
-    <img src="/Untitled_Artwork.jpg" width="100%"/>  
+
+    
+    <main>
+    </main>
+    
+
+    <!-- <img src="/Untitled_Artwork.jpg" width="100%"/>   -->
+    <script>
+      const element = document.querySelector("main")
+      let rot = -1
+     
+      
+
+      function stop() {
+        
+        clearInterval(rot)
+        element.style.transform = `rotate(0deg)`
+
+          rot = undefined
+      element.style.backgroundColor = 'green'
+
+      }
+
+      function start() {
+        
+        rot = setInterval(() => {
+        element.style.transform = `rotate(${Math.random()*360}deg)`
+      },Math.max(250, Math.random() * 1500))
+      element.style.backgroundImage=`url(${Math.ceil(Math.random()*3) +1}.jpg);`
+    }
+
+    element.onmousemove = () => {
+        if(rot == -1 || !rot) {
+          start()
+        }
+       
+      }
+
+      element.onclick = () => {
+        if(rot){
+          stop()
+        }else {
+          start()
+        }
+      }
+
+     
+
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+
+    <script async src="script.js"></script>
   </body>
 </html>
